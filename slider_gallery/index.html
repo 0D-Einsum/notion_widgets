@@ -68,6 +68,12 @@ body {
     center top/contain white;
 }
 
+.slide:nth-child(6) {
+  background: url("6.jpg") no-repeat
+    center top/contain white;
+}
+
+<!--
 .buttons button#prev {
   position: absolute;
   top: 50%;
@@ -94,6 +100,7 @@ body {
   background-color: #e5ebf3;
   color: #362a2b;
 }
+-->
 
 @media (min-width: 640px) and (min-height: 640px) {
   .slide .content {
@@ -123,6 +130,7 @@ body {
     <div class="slide"></div>
     <div class="slide"></div>
     <div class="slide"></div>
+    <div class="slide"></div>
 
   </div>
   <div class="buttons">
@@ -132,10 +140,12 @@ body {
   <!-- partial -->
   <script>
     const slides = document.querySelectorAll(".slide");
+    <!--
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
+    -->
     const auto = true;
-    const intervalTime = 15000;
+    const intervalTime = 10000;
     let slideInterval;
 
     const nextSlide = () => {
